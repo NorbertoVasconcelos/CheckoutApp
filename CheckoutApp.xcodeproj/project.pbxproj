@@ -7,15 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94B8C894951802EAA7DE8E63 /* Pods_CheckoutAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1012238CABA04A1124DE65 /* Pods_CheckoutAppUITests.framework */; };
+		DB8ABEECE723A3F4A4E11241 /* Pods_CheckoutApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73679EE2F426BA8F229BA666 /* Pods_CheckoutApp.framework */; };
 		FB6419191DE853CF00797378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6419181DE853CF00797378 /* AppDelegate.swift */; };
 		FB64191B1DE853CF00797378 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB64191A1DE853CF00797378 /* RootViewController.swift */; };
-		FB64191D1DE853CF00797378 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB64191C1DE853CF00797378 /* DataViewController.swift */; };
-		FB64191F1DE853CF00797378 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB64191E1DE853CF00797378 /* ModelController.swift */; };
 		FB6419221DE853CF00797378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6419201DE853CF00797378 /* Main.storyboard */; };
 		FB6419241DE853CF00797378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6419231DE853CF00797378 /* Assets.xcassets */; };
 		FB6419271DE853CF00797378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6419251DE853CF00797378 /* LaunchScreen.storyboard */; };
 		FB6419321DE853CF00797378 /* CheckoutAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6419311DE853CF00797378 /* CheckoutAppTests.swift */; };
 		FB64193D1DE853CF00797378 /* CheckoutAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB64193C1DE853CF00797378 /* CheckoutAppUITests.swift */; };
+		FB64194C1DE8575B00797378 /* BankCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB64194B1DE8575B00797378 /* BankCard.swift */; };
+		FB64194D1DE8575B00797378 /* BankCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB64194B1DE8575B00797378 /* BankCard.swift */; };
+		FB64194E1DE8575B00797378 /* BankCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB64194B1DE8575B00797378 /* BankCard.swift */; };
+		FB6419511DE860BC00797378 /* NumKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB6419501DE860BC00797378 /* NumKeyboard.xib */; };
+		FB6419521DE860BC00797378 /* NumKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB6419501DE860BC00797378 /* NumKeyboard.xib */; };
+		FB6419531DE860BC00797378 /* NumKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB6419501DE860BC00797378 /* NumKeyboard.xib */; };
+		FB6419551DE8830F00797378 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6419541DE8830F00797378 /* Keyboard.swift */; };
+		FB6419561DE8830F00797378 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6419541DE8830F00797378 /* Keyboard.swift */; };
+		FB6419571DE8830F00797378 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6419541DE8830F00797378 /* Keyboard.swift */; };
+		FB64195A1DE89A3700797378 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6419591DE89A3700797378 /* CustomTextField.swift */; };
+		FB64195B1DE89A3700797378 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6419591DE89A3700797378 /* CustomTextField.swift */; };
+		FB64195C1DE89A3700797378 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6419591DE89A3700797378 /* CustomTextField.swift */; };
+		FB64195F1DE8ADCA00797378 /* BankCardFront.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB64195E1DE8ADCA00797378 /* BankCardFront.xib */; };
+		FB6419601DE8ADCA00797378 /* BankCardFront.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB64195E1DE8ADCA00797378 /* BankCardFront.xib */; };
+		FB6419611DE8ADCA00797378 /* BankCardFront.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB64195E1DE8ADCA00797378 /* BankCardFront.xib */; };
+		FB6419681DE8B22E00797378 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6419671DE8B22E00797378 /* UIView+Utils.swift */; };
+		FB6419691DE8B22E00797378 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6419671DE8B22E00797378 /* UIView+Utils.swift */; };
+		FB64196A1DE8B22E00797378 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6419671DE8B22E00797378 /* UIView+Utils.swift */; };
+		FB8C89A81DECA89C008AC6D0 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C89A71DECA89C008AC6D0 /* UIColor+AppColors.swift */; };
+		FB8C89A91DECA89C008AC6D0 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C89A71DECA89C008AC6D0 /* UIColor+AppColors.swift */; };
+		FB8C89AA1DECA89C008AC6D0 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C89A71DECA89C008AC6D0 /* UIColor+AppColors.swift */; };
+		FB8C89B01DED9788008AC6D0 /* CustomToolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB8C89AF1DED9788008AC6D0 /* CustomToolbar.xib */; };
+		FB8C89B11DED9788008AC6D0 /* CustomToolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB8C89AF1DED9788008AC6D0 /* CustomToolbar.xib */; };
+		FB8C89B21DED9788008AC6D0 /* CustomToolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB8C89AF1DED9788008AC6D0 /* CustomToolbar.xib */; };
+		FB8C89B41DEDA0C3008AC6D0 /* CustomToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C89B31DEDA0C3008AC6D0 /* CustomToolbar.swift */; };
+		FB8C89B51DEDA0C3008AC6D0 /* CustomToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C89B31DEDA0C3008AC6D0 /* CustomToolbar.swift */; };
+		FB8C89B61DEDA0C3008AC6D0 /* CustomToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C89B31DEDA0C3008AC6D0 /* CustomToolbar.swift */; };
+		FBFE9C281DEC40B400D456AD /* BankCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE9C271DEC40B400D456AD /* BankCardView.swift */; };
+		FBFE9C291DEC40B400D456AD /* BankCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE9C271DEC40B400D456AD /* BankCardView.swift */; };
+		FBFE9C2A1DEC40B400D456AD /* BankCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE9C271DEC40B400D456AD /* BankCardView.swift */; };
+		FECE5E7CFFE29D19CEBA665C /* Pods_CheckoutAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D1C67F17949F022E4F974D /* Pods_CheckoutAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +67,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B83C27E3FD76A9B3050127C /* Pods-CheckoutAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckoutAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckoutAppUITests/Pods-CheckoutAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1BBB7DA3E767D3405109D772 /* Pods-CheckoutAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckoutAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckoutAppUITests/Pods-CheckoutAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		26527872411E90147F24CDFB /* Pods-CheckoutAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckoutAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckoutAppTests/Pods-CheckoutAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3095E85950D54245843328CB /* Pods-CheckoutAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckoutAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckoutAppTests/Pods-CheckoutAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		466B240CCE9EC5221EC87066 /* Pods-CheckoutApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckoutApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckoutApp/Pods-CheckoutApp.release.xcconfig"; sourceTree = "<group>"; };
+		73679EE2F426BA8F229BA666 /* Pods_CheckoutApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckoutApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B973F882EED5CD0509C24186 /* Pods-CheckoutApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckoutApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckoutApp/Pods-CheckoutApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B9D1C67F17949F022E4F974D /* Pods_CheckoutAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckoutAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1012238CABA04A1124DE65 /* Pods_CheckoutAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckoutAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6419151DE853CF00797378 /* CheckoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6419181DE853CF00797378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB64191A1DE853CF00797378 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		FB64191C1DE853CF00797378 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		FB64191E1DE853CF00797378 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		FB6419211DE853CF00797378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB6419231DE853CF00797378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB6419261DE853CF00797378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +89,16 @@
 		FB6419381DE853CF00797378 /* CheckoutAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckoutAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB64193C1DE853CF00797378 /* CheckoutAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutAppUITests.swift; sourceTree = "<group>"; };
 		FB64193E1DE853CF00797378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB64194B1DE8575B00797378 /* BankCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BankCard.swift; path = Models/BankCard.swift; sourceTree = "<group>"; };
+		FB6419501DE860BC00797378 /* NumKeyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NumKeyboard.xib; path = Keyboard/NumKeyboard.xib; sourceTree = "<group>"; };
+		FB6419541DE8830F00797378 /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keyboard.swift; path = Keyboard/Keyboard.swift; sourceTree = "<group>"; };
+		FB6419591DE89A3700797378 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = TextConsumers/CustomTextField.swift; sourceTree = "<group>"; };
+		FB64195E1DE8ADCA00797378 /* BankCardFront.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BankCardFront.xib; path = BankCardUI/BankCardFront.xib; sourceTree = "<group>"; };
+		FB6419671DE8B22E00797378 /* UIView+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Utils.swift"; path = "Utils/UIView+Utils.swift"; sourceTree = "<group>"; };
+		FB8C89A71DECA89C008AC6D0 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+AppColors.swift"; path = "Utils/UIColor+AppColors.swift"; sourceTree = "<group>"; };
+		FB8C89AF1DED9788008AC6D0 /* CustomToolbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomToolbar.xib; path = Keyboard/CustomToolbar.xib; sourceTree = "<group>"; };
+		FB8C89B31DEDA0C3008AC6D0 /* CustomToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomToolbar.swift; path = Keyboard/CustomToolbar.swift; sourceTree = "<group>"; };
+		FBFE9C271DEC40B400D456AD /* BankCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BankCardView.swift; path = BankCardUI/BankCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB8ABEECE723A3F4A4E11241 /* Pods_CheckoutApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECE5E7CFFE29D19CEBA665C /* Pods_CheckoutAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +122,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94B8C894951802EAA7DE8E63 /* Pods_CheckoutAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		476EEB2E04F71D00043252C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B973F882EED5CD0509C24186 /* Pods-CheckoutApp.debug.xcconfig */,
+				466B240CCE9EC5221EC87066 /* Pods-CheckoutApp.release.xcconfig */,
+				26527872411E90147F24CDFB /* Pods-CheckoutAppTests.debug.xcconfig */,
+				3095E85950D54245843328CB /* Pods-CheckoutAppTests.release.xcconfig */,
+				1BBB7DA3E767D3405109D772 /* Pods-CheckoutAppUITests.debug.xcconfig */,
+				0B83C27E3FD76A9B3050127C /* Pods-CheckoutAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8CBD6433F4311615AA6AE950 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73679EE2F426BA8F229BA666 /* Pods_CheckoutApp.framework */,
+				B9D1C67F17949F022E4F974D /* Pods_CheckoutAppTests.framework */,
+				CE1012238CABA04A1124DE65 /* Pods_CheckoutAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FB64190C1DE853CF00797378 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +159,8 @@
 				FB6419301DE853CF00797378 /* CheckoutAppTests */,
 				FB64193B1DE853CF00797378 /* CheckoutAppUITests */,
 				FB6419161DE853CF00797378 /* Products */,
+				476EEB2E04F71D00043252C9 /* Pods */,
+				8CBD6433F4311615AA6AE950 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +177,13 @@
 		FB6419171DE853CF00797378 /* CheckoutApp */ = {
 			isa = PBXGroup;
 			children = (
+				FB6419661DE8B1F100797378 /* Utils */,
+				FB64195D1DE8ADA000797378 /* BankCardUI */,
+				FB6419581DE89A0900797378 /* TextConsumers */,
+				FB64194F1DE8609A00797378 /* Keyboard */,
+				FB64194A1DE856D100797378 /* Models */,
 				FB6419181DE853CF00797378 /* AppDelegate.swift */,
 				FB64191A1DE853CF00797378 /* RootViewController.swift */,
-				FB64191C1DE853CF00797378 /* DataViewController.swift */,
-				FB64191E1DE853CF00797378 /* ModelController.swift */,
 				FB6419201DE853CF00797378 /* Main.storyboard */,
 				FB6419231DE853CF00797378 /* Assets.xcassets */,
 				FB6419251DE853CF00797378 /* LaunchScreen.storyboard */,
@@ -131,6 +210,51 @@
 			path = CheckoutAppUITests;
 			sourceTree = "<group>";
 		};
+		FB64194A1DE856D100797378 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB64194B1DE8575B00797378 /* BankCard.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FB64194F1DE8609A00797378 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FB6419501DE860BC00797378 /* NumKeyboard.xib */,
+				FB6419541DE8830F00797378 /* Keyboard.swift */,
+				FB8C89AF1DED9788008AC6D0 /* CustomToolbar.xib */,
+				FB8C89B31DEDA0C3008AC6D0 /* CustomToolbar.swift */,
+			);
+			name = Keyboard;
+			sourceTree = "<group>";
+		};
+		FB6419581DE89A0900797378 /* TextConsumers */ = {
+			isa = PBXGroup;
+			children = (
+				FB6419591DE89A3700797378 /* CustomTextField.swift */,
+			);
+			name = TextConsumers;
+			sourceTree = "<group>";
+		};
+		FB64195D1DE8ADA000797378 /* BankCardUI */ = {
+			isa = PBXGroup;
+			children = (
+				FB64195E1DE8ADCA00797378 /* BankCardFront.xib */,
+				FBFE9C271DEC40B400D456AD /* BankCardView.swift */,
+			);
+			name = BankCardUI;
+			sourceTree = "<group>";
+		};
+		FB6419661DE8B1F100797378 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FB6419671DE8B22E00797378 /* UIView+Utils.swift */,
+				FB8C89A71DECA89C008AC6D0 /* UIColor+AppColors.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +262,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB6419411DE853CF00797378 /* Build configuration list for PBXNativeTarget "CheckoutApp" */;
 			buildPhases = (
+				777619847A2F245357CAB3AC /* [CP] Check Pods Manifest.lock */,
 				FB6419111DE853CF00797378 /* Sources */,
 				FB6419121DE853CF00797378 /* Frameworks */,
 				FB6419131DE853CF00797378 /* Resources */,
+				1DBECCE61FC7C5F003BB1496 /* [CP] Embed Pods Frameworks */,
+				408AA94F89AE5927100AEFDD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,9 +282,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB6419441DE853CF00797378 /* Build configuration list for PBXNativeTarget "CheckoutAppTests" */;
 			buildPhases = (
+				2CEF053C9965E00916E9A5AA /* [CP] Check Pods Manifest.lock */,
 				FB6419291DE853CF00797378 /* Sources */,
 				FB64192A1DE853CF00797378 /* Frameworks */,
 				FB64192B1DE853CF00797378 /* Resources */,
+				4EDC1A744B631FAE1BDEAE37 /* [CP] Embed Pods Frameworks */,
+				FE1BA984073426974EA456A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +303,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB6419471DE853CF00797378 /* Build configuration list for PBXNativeTarget "CheckoutAppUITests" */;
 			buildPhases = (
+				B420901687059BDAA6F1B02C /* [CP] Check Pods Manifest.lock */,
 				FB6419341DE853CF00797378 /* Sources */,
 				FB6419351DE853CF00797378 /* Frameworks */,
 				FB6419361DE853CF00797378 /* Resources */,
+				A015B54BCD7AB9D95FF0CC0F /* [CP] Embed Pods Frameworks */,
+				D5BC82E74F1E76CD5933EF9F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,8 +372,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB6419271DE853CF00797378 /* LaunchScreen.storyboard in Resources */,
+				FB6419511DE860BC00797378 /* NumKeyboard.xib in Resources */,
 				FB6419241DE853CF00797378 /* Assets.xcassets in Resources */,
 				FB6419221DE853CF00797378 /* Main.storyboard in Resources */,
+				FB8C89B01DED9788008AC6D0 /* CustomToolbar.xib in Resources */,
+				FB64195F1DE8ADCA00797378 /* BankCardFront.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +384,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB6419521DE860BC00797378 /* NumKeyboard.xib in Resources */,
+				FB8C89B11DED9788008AC6D0 /* CustomToolbar.xib in Resources */,
+				FB6419601DE8ADCA00797378 /* BankCardFront.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,19 +394,165 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB6419531DE860BC00797378 /* NumKeyboard.xib in Resources */,
+				FB8C89B21DED9788008AC6D0 /* CustomToolbar.xib in Resources */,
+				FB6419611DE8ADCA00797378 /* BankCardFront.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DBECCE61FC7C5F003BB1496 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckoutApp/Pods-CheckoutApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CEF053C9965E00916E9A5AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		408AA94F89AE5927100AEFDD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckoutApp/Pods-CheckoutApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EDC1A744B631FAE1BDEAE37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckoutAppTests/Pods-CheckoutAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		777619847A2F245357CAB3AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A015B54BCD7AB9D95FF0CC0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckoutAppUITests/Pods-CheckoutAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B420901687059BDAA6F1B02C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D5BC82E74F1E76CD5933EF9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckoutAppUITests/Pods-CheckoutAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE1BA984073426974EA456A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckoutAppTests/Pods-CheckoutAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB6419111DE853CF00797378 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB64195A1DE89A3700797378 /* CustomTextField.swift in Sources */,
+				FB8C89A81DECA89C008AC6D0 /* UIColor+AppColors.swift in Sources */,
 				FB64191B1DE853CF00797378 /* RootViewController.swift in Sources */,
-				FB64191F1DE853CF00797378 /* ModelController.swift in Sources */,
-				FB64191D1DE853CF00797378 /* DataViewController.swift in Sources */,
+				FB6419681DE8B22E00797378 /* UIView+Utils.swift in Sources */,
+				FB8C89B41DEDA0C3008AC6D0 /* CustomToolbar.swift in Sources */,
+				FBFE9C281DEC40B400D456AD /* BankCardView.swift in Sources */,
+				FB64194C1DE8575B00797378 /* BankCard.swift in Sources */,
+				FB6419551DE8830F00797378 /* Keyboard.swift in Sources */,
 				FB6419191DE853CF00797378 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +561,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB64195B1DE89A3700797378 /* CustomTextField.swift in Sources */,
+				FB8C89B51DEDA0C3008AC6D0 /* CustomToolbar.swift in Sources */,
 				FB6419321DE853CF00797378 /* CheckoutAppTests.swift in Sources */,
+				FB6419691DE8B22E00797378 /* UIView+Utils.swift in Sources */,
+				FB6419561DE8830F00797378 /* Keyboard.swift in Sources */,
+				FBFE9C291DEC40B400D456AD /* BankCardView.swift in Sources */,
+				FB8C89A91DECA89C008AC6D0 /* UIColor+AppColors.swift in Sources */,
+				FB64194D1DE8575B00797378 /* BankCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +576,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB64195C1DE89A3700797378 /* CustomTextField.swift in Sources */,
+				FB8C89B61DEDA0C3008AC6D0 /* CustomToolbar.swift in Sources */,
 				FB64193D1DE853CF00797378 /* CheckoutAppUITests.swift in Sources */,
+				FB64196A1DE8B22E00797378 /* UIView+Utils.swift in Sources */,
+				FB6419571DE8830F00797378 /* Keyboard.swift in Sources */,
+				FBFE9C2A1DEC40B400D456AD /* BankCardView.swift in Sources */,
+				FB8C89AA1DECA89C008AC6D0 /* UIColor+AppColors.swift in Sources */,
+				FB64194E1DE8575B00797378 /* BankCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +640,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -391,6 +691,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -418,7 +719,9 @@
 		};
 		FB6419421DE853CF00797378 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B973F882EED5CD0509C24186 /* Pods-CheckoutApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CheckoutApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -430,7 +733,9 @@
 		};
 		FB6419431DE853CF00797378 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 466B240CCE9EC5221EC87066 /* Pods-CheckoutApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CheckoutApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -442,6 +747,7 @@
 		};
 		FB6419451DE853CF00797378 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26527872411E90147F24CDFB /* Pods-CheckoutAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +762,7 @@
 		};
 		FB6419461DE853CF00797378 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3095E85950D54245843328CB /* Pods-CheckoutAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -470,6 +777,7 @@
 		};
 		FB6419481DE853CF00797378 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BBB7DA3E767D3405109D772 /* Pods-CheckoutAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CheckoutAppUITests/Info.plist;
@@ -483,6 +791,7 @@
 		};
 		FB6419491DE853CF00797378 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B83C27E3FD76A9B3050127C /* Pods-CheckoutAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CheckoutAppUITests/Info.plist;
@@ -513,6 +822,7 @@
 				FB6419431DE853CF00797378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB6419441DE853CF00797378 /* Build configuration list for PBXNativeTarget "CheckoutAppTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +831,7 @@
 				FB6419461DE853CF00797378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB6419471DE853CF00797378 /* Build configuration list for PBXNativeTarget "CheckoutAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +840,7 @@
 				FB6419491DE853CF00797378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

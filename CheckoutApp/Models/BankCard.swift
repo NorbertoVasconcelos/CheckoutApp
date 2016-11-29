@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+struct BankCard {
+    var name: String
+    var expirationDate: Date?
+    var cardNumber: String?
+    var cardSecurityCode: String?
+    var validCard: Bool?
+    
+    init() {
+        self.name = "Norberto Vasconcelos"
+    }
+}
