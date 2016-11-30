@@ -26,7 +26,7 @@
                             </constraints>
                         </view>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oxz-mw-hW2" customClass="CustomTextField" customModule="CheckoutApp">
-                            <rect key="frame" x="115" y="94.5" width="50" height="30"/>
+                            <rect key="frame" x="115" y="95" width="50" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="Udf-gj-cvA"/>
                             </constraints>
@@ -40,11 +40,17 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_alert" translatesAutoresizingMaskIntoConstraints="NO" id="qJW-zc-MIn">
+                            <rect key="frame" x="258" y="105" width="10" height="10"/>
+                            <color key="tintColor" red="0.95686274510000002" green="0.81568627449999997" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
+                        <constraint firstItem="qJW-zc-MIn" firstAttribute="centerY" secondItem="lhg-ht-HZO" secondAttribute="centerY" id="0Mt-QX-bSD"/>
                         <constraint firstItem="XUV-4A-vUd" firstAttribute="top" secondItem="K9B-55-cpd" secondAttribute="top" constant="20" id="4eH-WL-1cW"/>
                         <constraint firstAttribute="trailing" secondItem="XUV-4A-vUd" secondAttribute="trailing" id="Ec4-pW-hpo"/>
+                        <constraint firstItem="qJW-zc-MIn" firstAttribute="leading" secondItem="lhg-ht-HZO" secondAttribute="trailing" constant="4" id="Hst-3u-IGb"/>
                         <constraint firstItem="XUV-4A-vUd" firstAttribute="leading" secondItem="K9B-55-cpd" secondAttribute="leading" id="Imh-AL-bTM"/>
                         <constraint firstItem="oxz-mw-hW2" firstAttribute="centerX" secondItem="K9B-55-cpd" secondAttribute="centerX" id="ajj-xn-dbF"/>
                         <constraint firstItem="lhg-ht-HZO" firstAttribute="leading" secondItem="oxz-mw-hW2" secondAttribute="trailing" constant="8" id="esA-Db-Z8e"/>
@@ -69,13 +75,13 @@
                             </userDefinedRuntimeAttributes>
                         </imageView>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="1234-1234-1234-1234" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fHH-if-hou" customClass="CustomTextField" customModule="CheckoutApp">
-                            <rect key="frame" x="20" y="62.5" width="224" height="19"/>
+                            <rect key="frame" x="20" y="63" width="224" height="19"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="12/16" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c0C-K2-L6k">
-                            <rect key="frame" x="20" y="101.5" width="224" height="19"/>
+                            <rect key="frame" x="20" y="102" width="224" height="19"/>
                             <color key="tintColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
@@ -88,7 +94,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAJ-RT-HGG">
-                            <rect key="frame" x="20" y="46.5" width="63" height="16"/>
+                            <rect key="frame" x="20" y="47" width="63" height="16"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="16" id="zcp-Wb-UAa"/>
                             </constraints>
@@ -97,7 +103,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiration Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHa-br-7oe">
-                            <rect key="frame" x="20" y="85.5" width="74" height="16"/>
+                            <rect key="frame" x="20" y="86" width="74" height="16"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="16" id="6ss-Zm-mXD"/>
                             </constraints>
@@ -105,13 +111,23 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_alert" translatesAutoresizingMaskIntoConstraints="NO" id="qiQ-eD-C4M">
+                            <rect key="frame" x="91" y="50" width="10" height="10"/>
+                            <color key="tintColor" red="0.95686274510000002" green="0.81568627449999997" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_alert" translatesAutoresizingMaskIntoConstraints="NO" id="BlH-jH-ybe">
+                            <rect key="frame" x="102" y="89" width="10" height="10"/>
+                            <color key="tintColor" red="0.95686274509803915" green="0.81568627450980391" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="HAJ-RT-HGG" firstAttribute="leading" secondItem="3s5-Dv-T5N" secondAttribute="leading" constant="20" id="Dpy-7Q-GW7"/>
+                        <constraint firstItem="BlH-jH-ybe" firstAttribute="centerY" secondItem="WHa-br-7oe" secondAttribute="centerY" id="La6-AY-OJ6"/>
                         <constraint firstItem="DnL-Zh-aWO" firstAttribute="leading" secondItem="3s5-Dv-T5N" secondAttribute="leading" constant="20" id="MSd-SB-UR1"/>
                         <constraint firstAttribute="trailing" secondItem="nEW-VB-L8Y" secondAttribute="trailing" constant="8" id="NzM-Hy-ffg"/>
                         <constraint firstItem="c0C-K2-L6k" firstAttribute="leading" secondItem="3s5-Dv-T5N" secondAttribute="leading" constant="20" id="OTa-q8-SVT"/>
+                        <constraint firstItem="qiQ-eD-C4M" firstAttribute="leading" secondItem="HAJ-RT-HGG" secondAttribute="trailing" constant="8" id="Q1j-dp-EKJ"/>
                         <constraint firstItem="fHH-if-hou" firstAttribute="centerY" secondItem="3s5-Dv-T5N" secondAttribute="centerY" constant="-8" id="XzM-jJ-1gE"/>
                         <constraint firstItem="fHH-if-hou" firstAttribute="top" secondItem="HAJ-RT-HGG" secondAttribute="bottom" id="dfc-wf-U3f"/>
                         <constraint firstItem="WHa-br-7oe" firstAttribute="leading" secondItem="3s5-Dv-T5N" secondAttribute="leading" constant="20" id="fAg-6c-ao9"/>
@@ -121,6 +137,8 @@
                         <constraint firstAttribute="trailing" secondItem="fHH-if-hou" secondAttribute="trailing" constant="36" id="jdQ-qi-DSJ"/>
                         <constraint firstAttribute="trailing" secondItem="DnL-Zh-aWO" secondAttribute="trailing" constant="8" id="kr3-6U-vkp"/>
                         <constraint firstItem="WHa-br-7oe" firstAttribute="top" secondItem="fHH-if-hou" secondAttribute="bottom" constant="4" id="nDC-mh-M90"/>
+                        <constraint firstItem="qiQ-eD-C4M" firstAttribute="centerY" secondItem="HAJ-RT-HGG" secondAttribute="centerY" id="nTV-ad-MQJ"/>
+                        <constraint firstItem="BlH-jH-ybe" firstAttribute="leading" secondItem="WHa-br-7oe" secondAttribute="trailing" constant="8" id="nou-Ud-O2F"/>
                         <constraint firstItem="nEW-VB-L8Y" firstAttribute="top" secondItem="3s5-Dv-T5N" secondAttribute="top" constant="8" id="va8-65-jLr"/>
                         <constraint firstItem="c0C-K2-L6k" firstAttribute="top" secondItem="WHa-br-7oe" secondAttribute="bottom" id="wbU-mK-Qgx"/>
                     </constraints>
@@ -148,13 +166,20 @@
             </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="back" destination="K9B-55-cpd" id="Rye-Zy-tEP"/>
+                <outlet property="cardNumberAlert" destination="qiQ-eD-C4M" id="c14-ea-k4r"/>
+                <outlet property="expDateAlert" destination="BlH-jH-ybe" id="58V-WO-Jsb"/>
                 <outlet property="front" destination="3s5-Dv-T5N" id="Wcg-We-Xe0"/>
                 <outlet property="imgBank" destination="nEW-VB-L8Y" id="ccm-dO-pvb"/>
                 <outlet property="lblName" destination="DnL-Zh-aWO" id="fIg-Hc-aJ6"/>
+                <outlet property="securityCodeAlert" destination="qJW-zc-MIn" id="vW2-cZ-Eqe"/>
                 <outlet property="tfCardNum" destination="fHH-if-hou" id="TV0-pg-mdc"/>
                 <outlet property="tfExpDate" destination="c0C-K2-L6k" id="NY2-Ld-TW9"/>
                 <outlet property="tfSecurityCode" destination="oxz-mw-hW2" id="eu5-5f-oer"/>
             </connections>
+            <point key="canvasLocation" x="-13" y="9"/>
         </view>
     </objects>
+    <resources>
+        <image name="ic_alert" width="10" height="10"/>
+    </resources>
 </document>

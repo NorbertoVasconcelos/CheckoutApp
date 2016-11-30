@@ -26,10 +26,14 @@ class BankCardView: UIView {
     @IBOutlet weak var tfCardNum: CustomTextField!
     @IBOutlet weak var front: UIView!
     @IBOutlet weak var back: UIView!
+    @IBOutlet weak var securityCodeAlert: UIImageView!
+    @IBOutlet weak var cardNumberAlert: UIImageView!
+    @IBOutlet weak var expDateAlert: UIImageView!
     
     // MARK: Variables
     let disposeBag: DisposeBag = DisposeBag()
-    var cardFlip: CardFlip?
+    var allValid: Observable<Bool>?
+    var cardFlip: CardFlip = .front
     var bankCard: BankCard?
     var toolbar: CustomToolbar? = UINib(nibName: "CustomToolbar", bundle: nil).instantiate(withOwner: nil, options: nil).first as? CustomToolbar
     var currentResponder: UITextField?
@@ -44,18 +48,16 @@ class BankCardView: UIView {
         if let t = toolbar {
             self.setupInputAccessoryViews(toolbar: t)
         }
+        mutateActionButton()
     }
     
     // MARK: - Card Flip -
     public func flipCard(_ flip:CardFlip) {
         
         // Save the current flip
-        self.cardFlip = flip
+        cardFlip = flip
         
-        // Guarantee a flip exists
-        guard let cf = self.cardFlip else { return }
-        
-        switch cf {
+        switch flip {
         case .front:
             UIView
                 .transition(from: back,
@@ -98,7 +100,9 @@ class BankCardView: UIView {
             .map {
                 [weak self] text -> Bool in
                 self?.bankCard?.cardNumber = text
-                return self?.validateCardNumber(number: text ?? "") ?? false
+                let isValid: Bool = self?.validateCardNumber(number: text ?? "") ?? false
+                self?.cardNumberAlert.isHidden = isValid
+                return isValid
             }
             .shareReplay(1)
         
@@ -109,6 +113,7 @@ class BankCardView: UIView {
                 [weak self] text -> Bool in
 //                self?.bankCard?.expirationDate = text
 //                return self?.validateExpirationDate(date: text ?? "") ?? false
+
                 return true
             }
             .shareReplay(1)
@@ -119,12 +124,13 @@ class BankCardView: UIView {
             .map {
                 [weak self] text -> Bool in
                 self?.bankCard?.cardSecurityCode = text
-                return self?.validateSecurityCode(number: text ?? "") ?? false
+                let isValid: Bool = self?.validateSecurityCode(number: text ?? "") ?? false
+                self?.securityCodeAlert.isHidden = isValid
+                return isValid
             }
             .shareReplay(1)
         
-        let allValid: Observable<Bool>
-            = Observable.combineLatest(validCardNumber, validSecurityCode, validExpirationDate) { $0 && $1 && $2 }
+         allValid = Observable.combineLatest(validCardNumber, validSecurityCode, validExpirationDate) { $0 && $1 && $2 }
         
         
         tfCardNum
@@ -132,7 +138,7 @@ class BankCardView: UIView {
             .controlEvent(.editingDidEndOnExit)
             .subscribe(onNext: { [weak self] in
                 
-                allValid.subscribe(onNext: { [weak self] isValid in
+                self?.allValid?.subscribe(onNext: { [weak self] isValid in
                     self?.bankCard?.validCard = true
                     },
                                    onError: { error in},
@@ -152,7 +158,7 @@ class BankCardView: UIView {
             .controlEvent(.editingDidEndOnExit)
             .subscribe(onNext: { [weak self] in
                 
-                allValid.subscribe(onNext: { [weak self] isValid in
+                self?.allValid?.subscribe(onNext: { [weak self] isValid in
                     self?.bankCard?.validCard = true
                     },
                                    onError: { error in},
@@ -250,6 +256,7 @@ class BankCardView: UIView {
         } else if tfSecurityCode.isEditing {
             flipCard(.front)
         }
+        mutateActionButton()
     }
     
     func previous() {
@@ -257,8 +264,28 @@ class BankCardView: UIView {
             tfCardNum.becomeFirstResponder()
         } else if tfSecurityCode.isEditing {
             flipCard(.front)
-            tfExpDate.becomeFirstResponder()
         }
+        mutateActionButton()
+    }
+    
+    func mutateActionButton() {
+        let isCardFlipped = cardFlip == .back
+        Observable.just(isCardFlipped).subscribe(toolbar!.btnBack.rx.isEnabled).addDisposableTo(disposeBag)
+        toolbar?.btnContinue.image = isCardFlipped ? #imageLiteral(resourceName: "ic_thumbs_up") : #imageLiteral(resourceName: "ic_arrow_right")
+        allValid?
+            .subscribe(onNext: { [weak self] areValid in
+                if isCardFlipped {
+                    self?.toolbar?.btnContinue.isEnabled = areValid
+                } else {
+                    self?.toolbar?.btnContinue.isEnabled = true
+                }
+                
+                },
+                       onError: { error in},
+                       onCompleted: {},
+                       onDisposed: {})
+            .addDisposableTo(disposeBag)
+        
     }
 
 }
