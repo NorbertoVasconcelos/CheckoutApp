@@ -111,10 +111,16 @@ class BankCardView: UIView {
             .text
             .map {
                 [weak self] text -> Bool in
-//                self?.bankCard?.expirationDate = text
-//                return self?.validateExpirationDate(date: text ?? "") ?? false
+                
+                let date = self?.datifyString(text ?? "")
+                self?.bankCard?.expirationDate = date
+                if let d = date {
+                    let isValid: Bool = self?.validateExpirationDate(date: d) ?? false
+                    self?.expDateAlert.isHidden = isValid
+                    return isValid
+                }
+                return false
 
-                return true
             }
             .shareReplay(1)
         
@@ -234,6 +240,12 @@ class BankCardView: UIView {
         return dateFormatter.string(from: date)
     }
     
+    func datifyString(_ text: String) -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/yy"
+        return dateFormatter.date(from: text)
+    }
+    
     // MARK: - Validations -
     func validateCardNumber(number:String) -> Bool {
         return number.characters.count > 5
@@ -244,7 +256,7 @@ class BankCardView: UIView {
     }
     
     func validateExpirationDate(date: Date) -> Bool {
-        return true
+        return stringifyDate(date).characters.count > 0
     }
     
     // MARK: - Actions - 
@@ -271,7 +283,7 @@ class BankCardView: UIView {
     func mutateActionButton() {
         let isCardFlipped = cardFlip == .back
         Observable.just(isCardFlipped).subscribe(toolbar!.btnBack.rx.isEnabled).addDisposableTo(disposeBag)
-        toolbar?.btnContinue.image = isCardFlipped ? #imageLiteral(resourceName: "ic_thumbs_up") : #imageLiteral(resourceName: "ic_arrow_right")
+        toolbar?.btnContinue.image = isCardFlipped ? #imageLiteral(resourceName: "ic_check") : #imageLiteral(resourceName: "ic_arrow_right")
         allValid?
             .subscribe(onNext: { [weak self] areValid in
                 if isCardFlipped {
